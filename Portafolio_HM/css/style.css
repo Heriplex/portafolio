@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos para el cuerpo */
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 180px;
+    text-align: justify;
+    background-color: #04162c;
+
+}
+
+
+/* Estilos para el contenedor del header y la barra de navegación */
+.header-nav-container {
+    background-image: url('/img/telecom.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+/* Estilos para el header */
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    height: fit-content;
+}
+header h1 {
+    font-size: 34px; /* Tamaño de fuente más grande */
+    padding: 5px; /* Espacio entre el texto y el borde */
+    margin-bottom: -5px;
+    
+}
+
+.botones {
+    min-width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.botones a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #24a8e6 ;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -20px;
+    margin-top: -10px;
+    
+}
+
+.botones a.fa-facebook {
+    background-image: url('/img/facebook.png');
+    border: solid;
+}
+
+.botones a.fa-github {
+    background-image: url('/img/github.png');
+    border: solid;
+}
+
+.botones a.fa-whatsapp {
+    background-image: url('/img/whatsapp.png');
+    border: solid;
+}
+
+.botones a.fa-youtube {
+    background-image: url('/img/youtube.png');
+    border: solid;
+}
+
+.botones a.fa-linkedin {
+    background-image: url('/img/linkedin.png');
+    border: solid;
+}
+
+.botones a:hover {
+    background-color: #405c73;
+    transform: translateY(-2px);
+}
+
+.botones a::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f082";
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: transparent;
+}
+
+
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+/* Estilos para el content debajo de la barra de navegación */
+section {
+    padding: 20px;
+}
+
+.foto {
+    text-align: center;
+}
+
+.foto img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.descripcion {
+    text-align: justify;
+}
+
+.biografia {
+    border: 2px solid #24a8e6 ;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.biografia .descripcion:last-child {
+    text-align: right;
+}
+
+/* Estilos para el footer */
+footer {
+    text-align: center;
+    background-image: url('/img/telecom.jpg');
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+/* Formulario de contacto*/
+
+fieldset {
+    margin-top: 40px;
+}
+
+.contact-form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid #24a8e6 ;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 43px;
+}
+
+
+.contact-form {
+    width: 100%;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;     /* Espacio entre grupos de campos */
+}
+
+.form-grupo label {
+    margin-bottom: 5px;    /* Espacio inferior para las etiquetas */
+}
+
+.form-grupo input[type="text"],
+.form-grupo input[type="email"],
+.form-grupo input[type="tel"],
+.form-grupo textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;     /* Espacio inferior para los campos de entrada */
+    border: 1px solid #ccc;    /* Añade un borde a los campos */
+}
+
+.form-grupo input[type="submit"] {
+    padding: 10px 20px;    /* Ajusta el espaciado del botón */
+    margin-top: 10px;    /* Añade espacio superior al botón */
+}
+
+.contact-form-box h2 {
+    margin-bottom: 20px;    /* Añade espacio inferior al título del formulario */
+}
+
+.contact-label {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-form form input[type="submit"] {
+    background-color: #24a8e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form form input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+
+
+/*servicios*/
+#servicios {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.servicio-entry {
+    flex: 1;
+    margin: 0 10px;
+    border: 2px solid #24a8e6 ;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 605px;
+    margin-top: 30px;
+}
+
+.servicio-content {
+    padding: 20px;
+}
+
+.servicio-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.servicio-content h3 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.servicio-content p {
+    margin-bottom: 10px;
+}
+
+.servicio-content strong {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #24a8e6;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+
+/*Idioma*/
+.idioma {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.idioma button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.idioma button img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.idioma button:hover img {
+    border-color: #24a8e6;
+}
